@@ -1,7 +1,15 @@
+/* Reset defaults so the page cannot scroll */
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Blocks unwanted scrollbars completely */
+  background-color: #141414; /* Matches your game's dark theme instantly */
+  width: 100%;
+  height: 100%;
 }
+
+/* Force the p5.js canvas to behave as a solid layout block */
 canvas {
-  display: block;
+  display: block; /* Erases the default inline spacing bug */
+  vertical-align: middle;
 }
